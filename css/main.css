@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +8,9 @@
 body {
     height: 100vh;
     display: flex;
-    background: gray;
+    background: #E9EB9E;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.5em;
 }
 
 .main-wrap {
@@ -23,12 +26,14 @@ table {
     height: 100%;
     text-align: center;
 }
-button{
+
+button {
     margin: auto;
 }
+
 #grid td {
-    border: 1px solid black;
-    background: lightblue;
+    border: 1px solid #14080E;
+    background: #799496;
 }
 
 #grid td:hover {
@@ -37,26 +42,30 @@ button{
 }
 
 #grid .filled {
-    background: #000;
+    background: #14080E;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.2fr 1.9fr;
-    grid-template-rows: 0.2fr 1.9fr;
+    grid-template-columns: 0.3fr 1.9fr;
+    grid-template-rows: 0.3fr 1.9fr;
     grid-template-areas: ". rnum2""rnum1 maingrid";
     min-width: 600px;
     min-height: 600px;
 }
 
 .rnum1 {
-    background: yellow;
+    background: #ACC196;
     grid-area: rnum1;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .rnum2 {
-    background: yellow;
+    background: #ACC196;
     grid-area: rnum2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .maingrid {
