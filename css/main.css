@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: gray;
+}
+
+.main-wrap {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+button{
+    margin: auto;
+}
+#grid td {
+    border: 1px solid black;
+    background: lightblue;
+}
+
+#grid td:hover {
+    background: blue;
+    transition: 0.75s;
+}
+
+#grid .filled {
+    background: #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1.9fr;
+    grid-template-rows: 0.2fr 1.9fr;
+    grid-template-areas: ". rnum2""rnum1 maingrid";
+    min-width: 600px;
+    min-height: 600px;
+}
+
+.rnum1 {
+    background: yellow;
+    grid-area: rnum1;
+}
+
+.rnum2 {
+    background: yellow;
+    grid-area: rnum2;
+}
+
+.maingrid {
+    background: blue;
+    grid-area: maingrid;
+}
