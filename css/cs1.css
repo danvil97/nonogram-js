@@ -1,0 +1,37 @@
+/*
+!Цветовая схема:
+*   #2d3142
+*   #14080e
+*   #799496
+*   #acc196
+*   #e9eb9e
+*/
+
+body {
+    background: #E9EB9E;
+}
+
+#grid td {
+    border: 1px solid #14080E;
+    background: #799496;
+}
+
+#grid td:hover {
+    background: blue;
+    transition: 0.75s;
+}
+
+#grid .filled {
+    background: #14080E;
+}
+
+.rnum1 {
+    background: #ACC196;
+}
+
+.rnum2 {
+    background: #ACC196;
+}
+.maingrid{
+    background: #14080E;
+}

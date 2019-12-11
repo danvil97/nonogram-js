@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +9,8 @@
 body {
     height: 100vh;
     display: flex;
-    background: #E9EB9E;
     font-family: 'Roboto', sans-serif;
-    font-size:1.5em;
+    font-size: 1.5em;
 }
 
 .main-wrap {
@@ -31,20 +31,6 @@ button {
     margin: auto;
 }
 
-#grid td {
-    border: 1px solid #14080E;
-    background: #799496;
-}
-
-#grid td:hover {
-    background: blue;
-    transition: 0.75s;
-}
-
-#grid .filled {
-    background: #14080E;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 0.3fr 1.9fr;
@@ -55,20 +41,17 @@ button {
 }
 
 .rnum1 {
-    background: #ACC196;
     grid-area: rnum1;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
 .rnum2 {
-    background: #ACC196;
     grid-area: rnum2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 .maingrid {
-    background: blue;
     grid-area: maingrid;
 }
