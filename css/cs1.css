@@ -25,6 +25,9 @@ body {
     background: #14080E;
 }
 
+#grid .crossed:before{
+    content: "X";
+}
 .rnum1 {
     background: #ACC196;
 }
